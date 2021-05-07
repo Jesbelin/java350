@@ -113,8 +113,43 @@ case SATURDAY:var = var + 1;
         return prime * this.tempsPartiel;
     }
 
+    /**
+     * Calcul de l'augmentation de salaire selon la règle :
+     * l'employé doit avoir une ancienneté supérieure à 1 an (> 12 mois)
+     * nouveau salaire = salaire actuel + un pourcentage dépendant du poste
+     * Pour les managers : 10% d'augementation annuelle
+     * Pour les commerciaux : 8% d'augementation annuelle
+     * Pour les techniciens : 5% d'augementation annuelle
+     *
+     * Cette augmenation est calculée une fois par an au 2 janvier
+     *
+     * @return le nouveau salaire de l'employé en Euros et cents
+     */
     //Augmenter salaire
-    //public void augmenterSalaire(double pourcentage){}
+    public Double augmenterSalaire(Double pourcentage){
+
+        Integer nbAnneeAnciennete = this.getNombreAnneeAnciennete();
+
+        if(matricule != null && nbAnneeAnciennete > 0){
+            switch (matricule.substring(0,1)) {
+                //case Manager
+                case "M" : pourcentage = 10.0;
+                    break;
+                //case Commercial
+                case "C" : pourcentage = 8.0;
+                    break;
+                //case Technicien
+                case "T": pourcentage = 5.0;
+                    break;
+                default: pourcentage = 0.0;
+                    break;
+            }
+        }
+        else {
+            pourcentage = 0.0;
+        }
+        return salaire + (salaire * pourcentage / 100);
+    }
 
     public Long getId() {
         return id;
