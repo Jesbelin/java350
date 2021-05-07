@@ -1,6 +1,8 @@
 package com.ipiecoles.java.java350.service;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
 import com.ipiecoles.java.java350.model.Employe;
+import com.ipiecoles.java.java350.model.Entreprise;
 import com.ipiecoles.java.java350.model.NiveauEtude;
 import com.ipiecoles.java.java350.model.Poste;
 import com.ipiecoles.java.java350.repository.EmployeRepository;
@@ -52,5 +54,26 @@ class EmployeServiceTestIntegration {
         Assertions.assertThat(employe.getTempsPartiel()).isEqualTo(tempsPartiel);
         //1521.22 * 1.6
         Assertions.assertThat(employe.getSalaire()).isEqualTo(2433.95d);
+    }
+
+    @Test
+    void testcalculPerformanceCommercial() throws EmployeException {
+        //Given
+        String matricule = "C12345";
+        employeRepository.save(new Employe("Doe", "John", matricule,
+                LocalDate.now(), Entreprise.SALAIRE_BASE, 5, 1.0));
+
+        Long caTraite = 900L ;
+        Long objectifCa = 1000L;
+
+
+        //When avec appel des vraies méthodes de repository...
+        employeService.calculPerformanceCommercial(matricule, caTraite, objectifCa);
+
+        //Then avec de vraies vérifications...
+        Double performance = employeRepository.avgPerformanceWhereMatriculeStartsWith("C");
+        Assertions.assertThat(performance).isNotNull();
+        Assertions.assertThat(performance).isEqualTo(3.0);
+
     }
 }

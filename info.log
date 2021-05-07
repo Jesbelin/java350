@@ -1,18 +1,42 @@
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Didou Koala diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@7316f2ec
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
-10:16:03 [main] WARN  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Attention, seuil des 90000 matricules atteints !
-10:16:03 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - L'employé de matricule M99999 existe déjà en BDD
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
-10:16:03 [main] WARN  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Attention, seuil des 90000 matricules atteints !
-10:16:03 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - L'employé de matricule M99999 existe déjà en BDD
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
-10:16:03 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Limite des 100000 matricules atteinte !
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
-10:16:03 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Limite des 100000 matricules atteinte !
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Aucun matricule trouvé, attribution du matricule par défaut 00001
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@bc2ccc5e
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 0.5
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Aucun matricule trouvé, attribution du matricule par défaut 00001
-10:16:03 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@f66f3d45
+15:47:55 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarting                    - Starting EmployeRepositoryTest on FR-L4228431 with PID 14320 (started by jennifer.esbelin in C:\Users\jennifer.esbelin\Documents\Cours\Java\ipi-java-350-ex-master)
+15:47:55 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStartupProfileInfo          - No active profile set, falling back to default profiles: default
+15:48:00 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarted                     - Started EmployeRepositoryTest in 5.194 seconds (JVM running for 7.03)
+15:48:42 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarting                    - Starting EmployeRepositoryTest on FR-L4228431 with PID 12324 (started by jennifer.esbelin in C:\Users\jennifer.esbelin\Documents\Cours\Java\ipi-java-350-ex-master)
+15:48:42 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStartupProfileInfo          - No active profile set, falling back to default profiles: default
+15:48:47 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarted                     - Started EmployeRepositoryTest in 4.81 seconds (JVM running for 6.473)
+16:10:08 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStarting                    - Starting EmployeServiceTestIntegration on FR-L4228431 with PID 1432 (started by jennifer.esbelin in C:\Users\jennifer.esbelin\Documents\Cours\Java\ipi-java-350-ex-master)
+16:10:08 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStartupProfileInfo          - No active profile set, falling back to default profiles: default
+16:10:12 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStarted                     - Started EmployeServiceTestIntegration in 4.209 seconds (JVM running for 6.051)
+17:05:01 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStarting                    - Starting EmployeServiceTestIntegration on FR-L4228431 with PID 10904 (started by jennifer.esbelin in C:\Users\jennifer.esbelin\Documents\Cours\Java\ipi-java-350-ex-master)
+17:05:01 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStartupProfileInfo          - No active profile set, falling back to default profiles: default
+17:05:05 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStarted                     - Started EmployeServiceTestIntegration in 4.133 seconds (JVM running for 6.109)
+17:05:29 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarting                    - Starting EmployeRepositoryTest on FR-L4228431 with PID 12376 (started by jennifer.esbelin in C:\Users\jennifer.esbelin\Documents\Cours\Java\ipi-java-350-ex-master)
+17:05:29 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStartupProfileInfo          - No active profile set, falling back to default profiles: default
+17:05:32 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarted                     - Started EmployeRepositoryTest in 3.927 seconds (JVM running for 5.786)
+17:06:14 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStarting                    - Starting EmployeServiceTestIntegration on FR-L4228431 with PID 18716 (started by jennifer.esbelin in C:\Users\jennifer.esbelin\Documents\Cours\Java\ipi-java-350-ex-master)
+17:06:14 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStartupProfileInfo          - No active profile set, falling back to default profiles: default
+17:06:18 [main] INFO  c.i.j.j.service.EmployeServiceTestIntegration     .logStarted                     - Started EmployeServiceTestIntegration in 4.27 seconds (JVM running for 6.05)
+17:07:14 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarting                    - Starting EmployeRepositoryTest on FR-L4228431 with PID 18896 (started by jennifer.esbelin in C:\Users\jennifer.esbelin\Documents\Cours\Java\ipi-java-350-ex-master)
+17:07:14 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStartupProfileInfo          - No active profile set, falling back to default profiles: default
+17:07:18 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarted                     - Started EmployeRepositoryTest in 4.351 seconds (JVM running for 6.041)
+17:07:32 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarting                    - Starting EmployeRepositoryTest on FR-L4228431 with PID 4512 (started by jennifer.esbelin in C:\Users\jennifer.esbelin\Documents\Cours\Java\ipi-java-350-ex-master)
+17:07:32 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStartupProfileInfo          - No active profile set, falling back to default profiles: default
+17:07:37 [main] INFO  c.i.java.java350.repository.EmployeRepositoryTest .logStarted                     - Started EmployeRepositoryTest in 4.706 seconds (JVM running for 6.505)
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Didou Koala diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@7316f6ad
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+17:09:30 [main] WARN  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Attention, seuil des 90000 matricules atteints !
+17:09:30 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - L'employé de matricule M99999 existe déjà en BDD
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+17:09:30 [main] WARN  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Attention, seuil des 90000 matricules atteints !
+17:09:30 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - L'employé de matricule M99999 existe déjà en BDD
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+17:09:30 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Limite des 100000 matricules atteinte !
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+17:09:30 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Limite des 100000 matricules atteinte !
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Aucun matricule trouvé, attribution du matricule par défaut 00001
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@bc2cd01f
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplômé de INGENIEUR en tant que MANAGER avec un taux d'activité de 0.5
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Aucun matricule trouvé, attribution du matricule par défaut 00001
+17:09:30 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@f66f4106

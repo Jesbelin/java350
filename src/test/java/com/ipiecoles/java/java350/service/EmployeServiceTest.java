@@ -175,4 +175,68 @@ public class EmployeServiceTest {
                 .hasMessage("L'employé de matricule M99999 existe déjà en BDD");
 
     }
+    // Cas caTraite nul ou négatif
+    @Test
+    void testCalculPerformanceCommercialAvecCaNeg() throws Exception {
+        String matricule = "M00001";
+        Long caTraite = -2l;
+        Long objectifCa = 1000l;
+
+        //Ajouter les mocks...
+        //Mockito.when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn(null);
+
+        //When
+        try {
+            employeService.calculPerformanceCommercial(matricule, caTraite, objectifCa);
+            Assertions.fail("Aurait du planter");
+        } catch (Exception e) {
+            //Then
+            //Vérifie qu'une exception est bien levée, et que c'est la bonne exception
+            Assertions.assertThat(e).isInstanceOf(EmployeException.class);
+            Assertions.assertThat(e.getMessage()).isEqualTo("Le chiffre d'affaire traité ne peut être négatif ou null !");
+        }
+    }
+
+    // Cas objectifCa nul ou négatif
+    @Test
+    void testCalculPerformanceCommercialAvecObjectifCaNul() throws Exception {
+        String matricule = "C00002";
+        Long caTraite =  925l;
+        Long objectifCa = -2l;
+
+        //Ajouter les mocks...
+        //Mockito.when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn(null);
+
+        //When
+        try {
+            employeService.calculPerformanceCommercial(matricule, caTraite, objectifCa);
+            Assertions.fail("Aurait du planter");
+        } catch (Exception e) {
+            //Then
+            //Vérifie qu'une exception est bien levée, et que c'est la bonne exception
+            Assertions.assertThat(e).isInstanceOf(EmployeException.class);
+            Assertions.assertThat(e.getMessage()).isEqualTo("L'objectif de chiffre d'affaire ne peut être négatif ou null !");
+        }
+    }
+    // Cas avec matricule <> 'C'
+    @Test
+    void testCalculPerformanceCommercialAvecFauxMatricule() throws Exception {
+        String matricule = "M00002";
+        Long caTraite =  925l;
+        Long objectifCa = 1000l;
+
+        //Ajouter les mocks...
+        //Mockito.when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn(null);
+
+        //When
+        try {
+            employeService.calculPerformanceCommercial(matricule, caTraite, objectifCa);
+            Assertions.fail("Aurait du planter");
+        } catch (Exception e) {
+            //Then
+            //Vérifie qu'une exception est bien levée, et que c'est la bonne exception
+            Assertions.assertThat(e).isInstanceOf(EmployeException.class);
+            Assertions.assertThat(e.getMessage()).isEqualTo("Le matricule ne peut être null et doit commencer par un C !");
+        }
+    }
 }
